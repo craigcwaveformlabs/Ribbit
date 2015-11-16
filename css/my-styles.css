@@ -44,6 +44,14 @@ strong {
 /* Layout
 ================================= */
 
+.ft {
+  margin-bottom: 72px;
+}
+
+.ft-copy {
+  padding-top: 32px;
+}
+
 
 /* Jumbotron
 ================================= */
@@ -144,6 +152,9 @@ strong {
     padding-bottom: 20px;
     background-position: 10% 10%;
   }
+  .ft-copy {
+    padding-top: 12px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -160,5 +171,8 @@ strong {
   }
   .lead {
     margin-bottom: 20px;
+  }
+  .ft-row {
+    margin-bottom: 16px;
   }
 }
