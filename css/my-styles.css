@@ -1,7 +1,20 @@
+.btn-default {
+  color: #d5c1f2;
+}
 
 /* Typography
 ================================= */
 
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot');
+	src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/icomoon.woff') format('woff'),
+		url('../fonts/icomoon.ttf') format('truetype'),
+		url('../fonts/icomoon.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
 h1 {
 	font-weight: 200;
 	margin-bottom: 30px;
@@ -33,11 +46,37 @@ strong {
 	font-size: initial;
 	margin-bottom: 20px;
 }
+.main-footer {
+	font-size: .95em;
+}
+.link-list {
+	list-style-type: none;
+	line-height: 1.8;
+	margin: 0;
+	padding: 0;
+}
+.copyright {
+	opacity: .8;
+	font-size: .9em;
+}
 
+/* Links
+================================= */
+
+.main-footer a {
+	color: #a6afb2;
+}
+.link-list .heading {
+	font-weight: bold;
+	margin-bottom: 10px;
+}
 
 /* Layout
 ================================= */
 
+hr {
+	margin-bottom: 58px;
+}
 .ft {
 	margin-bottom: 72px;
 }
@@ -53,6 +92,20 @@ strong {
 	border-bottom: solid 1px #eee;
 	padding: 42px 0;
 	margin: 80px 0 132px 0;
+}
+.callout {
+	padding: 35px 0;
+	margin-top: 64px;
+	text-align: center;
+	border: 1px solid #e3e3e3;
+	border-right: none;
+	border-left: none;
+}
+.callout .glyphicon {
+	margin-left: 10px;
+}
+.teacher-desc strong {
+	display: block;
 }
 
 /* Form
@@ -75,10 +128,8 @@ strong {
 /* Buttons
 ================================= */
 
-
 .btn-default {
 	border-width: 2px;
-  color: #d5c1f2;
 	border-color: inherit;
 	margin-right: 10px;
 	padding: 12px 22px;
@@ -96,7 +147,6 @@ strong {
 	color: #f7f7f7;
 	border-color: #ccc;
 }
-
 
 /* Jumbotron
 ================================= */
@@ -117,17 +167,6 @@ strong {
 
 /* Logos & Icons
 ================================= */
-
-@font-face {
-	font-family: 'icomoon';
-	src:url('../fonts/icomoon.eot');
-	src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/icomoon.woff') format('woff'),
-		url('../fonts/icomoon.ttf') format('truetype'),
-		url('../fonts/icomoon.svg#icomoon') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
 
 .main-logo {
 	width: 124px;
@@ -172,15 +211,21 @@ strong {
 .cloud:before {
 	background-position: 0 -210px;
 }
-[data-icon]::before {
+[data-icon]:before {
 	font-family: 'icomoon';
 	content: attr(data-icon);
-	margin-right: 8px;
 	speak: none;
 	font-weight: normal;
 	font-variant: normal;
 	text-transform: none;
 	line-height: 1;
+	margin-right: 8px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.th-logo {
+	width: 155px;
+	margin: -.75em 0 .95em 0;
 }
 
 
@@ -198,6 +243,9 @@ strong {
 	}
 	.ft-copy p {
 		width: auto;
+	}
+	.device {
+		margin-top: 28px;
 	}
 }
 @media (max-width: 767px) {
@@ -217,5 +265,11 @@ strong {
 	}
 	.ft {
 		margin-bottom: 16px;
+	}
+	hr {
+		margin-bottom: 40px;
+	}
+	.callout {
+		margin-top: 32px;
 	}
 }
