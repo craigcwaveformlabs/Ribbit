@@ -2,14 +2,32 @@
 /* Typography
 ================================= */
 
-.navbar-text {
-  font-weight: bold;
-  margin-right: 0;
-}
-
 h1 {
   font-weight: 200;
   margin-bottom: 30px;
+}
+
+h2,h3 {
+  font-size: 1.25em;
+  color: #5f5d60;
+  margin-bottom: 16px;
+  margin-top: 0px;
+}
+
+p {
+  color: #b3aeb5;
+  line-height: 1.7;
+  font-size: 1.1em;
+  font-weight: 200;
+}
+
+strong {
+  color: #5f5d60;
+}
+
+.navbar-text {
+  font-weight: bold;
+  margin-right: 0;
 }
 
 .lead {
@@ -21,7 +39,6 @@ h1 {
   font-size: initial;
   margin-bottom: 20px;
 }
-
 
 
 /* Layout
@@ -76,6 +93,24 @@ h1 {
   background: url('../img/main-logo.png') no-repeat;
   background-size: 100%;
 }
+
+.ft-icon {
+  width: 94%;
+  height: 196px;
+  position: relative;
+  background: #8c73b0 url('../img/main-bg.png') no-repeat 270px -180px;
+  background-size: 140%;
+}
+
+.ft-icon.friends {
+  background-position: -550px 0;
+}
+
+.ft-icon.cloud {
+  background-position: 260px 0;
+}
+
+
 
 /* Media Queries
 ================================= */
