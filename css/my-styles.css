@@ -2,6 +2,7 @@
   color: #d5c1f2;
 }
 
+
 /* Typography
 ================================= */
 
@@ -83,8 +84,9 @@ hr {
 .ft-copy {
 	padding-top: 32px;
 }
-.ft-copy p {
-	width: 90%;
+.ft-copy p,
+.copy-offset {
+	width: 88%;
 }
 .panel {
 	background-image: url('../img/form-panel-bg.png');
@@ -107,9 +109,11 @@ hr {
 .teacher-desc strong {
 	display: block;
 }
-
-.th-copy{
-  padding-top: 30px;
+.th-copy {
+	padding-top: 30px;
+}
+.main-footer {
+	margin: 100px 0 80px 0;
 }
 
 /* Form
@@ -151,13 +155,12 @@ hr {
 	color: #f7f7f7;
 	border-color: #ccc;
 }
-
 .btn-success {
-  box-shadow: 0 3px 0 #23812f;
-  text-shadow: 0 1px 1px rgba(0,0,0,0.3);
-  font-size: 1.5em;
-  width: 330px;
-  padding: 15px 0;
+	box-shadow: 0 3px 0 #23812f;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	font-size: 1.5em;
+	width: 330px;
+	padding: 15px 0;
 }
 
 /* Jumbotron
@@ -281,7 +284,19 @@ hr {
 	hr {
 		margin-bottom: 40px;
 	}
-	.callout {
+	.btn-success {
+		width: 85%;
+		font-size: initial;
+	}
+	.callout,
+	.link-list {
 		margin-top: 32px;
+	}
+	.main-footer {
+		margin-top: 64px;
+	}
+	.link-list {
+		float: left;
+		margin-right: 32px;
 	}
 }
