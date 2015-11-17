@@ -1,6 +1,6 @@
 # Ribbit
 
-Promotional Site built on the Bootstrap framework. Treehouse example.
+Promotional Site built on the Bootstrap framework. (Treehouse example)
 
 Screens
 ![Screens](img/screenshots/screens.png "Screens View")
